@@ -1,0 +1,10 @@
+// overide variables BEFORE Import (https://create-react-app.dev/docs/adding-bootstrap/) (https://getbootstrap.com/docs/4.6/getting-started/theming/#variable-defaults)
+
+$body-bg: rgba(17, 17, 17, 0.765);
+$body-color: #111;
+
+$theme-colors: (
+  "custom-color": #900
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
