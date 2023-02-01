@@ -1,14 +1,16 @@
-const MovieCard = ({title, description, year, movieposter}) => {
+const MovieCard = ({id, title, description, year, movieposter}) => {
   return (
-    <li className="card d-flex m-2 bg-body col-8 col-md-4">
-      <div>
-        <img className="card-img-top" src={movieposter} alt=""></img>
+    <li id={ id } key={ id } className="card bg-body g-0 col-12 col-sm-4 col-lg-3">
+      {/* <div className="img-container justify-content-start m3"> */}
+        <div>
+        <img className="card-img-top" src={"https://image.tmdb.org/t/p/w500/" + movieposter} alt=""></img>
       </div>
-      <article className="card-body">
+      {/* <article className="card-body">
         <h3 className="card-title">{title}</h3>
         <p className="card-text">{description}</p>
         <p>{year}</p>
-      </article>
+        <button>+</button>
+      </article> */}
     </li>
   );
 }
