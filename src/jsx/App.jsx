@@ -1,4 +1,9 @@
 import { useEffect, useState, useCallback } from "react";
+// ? Swiper imports:
+import { register } from "swiper/element/bundle";
+register();
+
+// Components:
 import Nav from "../components/Nav";
 import MovieList from "../components/MovieList";
 

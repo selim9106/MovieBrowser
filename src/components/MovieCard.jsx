@@ -1,6 +1,7 @@
 const MovieCard = ({id, title, description, year, movieposter}) => {
   return (
-    <li id={ id } key={ id } className="card bg-body g-0 col-12 col-sm-4 col-lg-3">
+    // <li id={ id } key={ id } className="card bg-body g-0 col-12 col-sm-4 col-lg-3">
+    <swiper-slide>
       {/* <div className="img-container justify-content-start m3"> */}
         <div>
         <img className="card-img-top" src={"https://image.tmdb.org/t/p/w500/" + movieposter} alt=""></img>
@@ -11,7 +12,8 @@ const MovieCard = ({id, title, description, year, movieposter}) => {
         <p>{year}</p>
         <button>+</button>
       </article> */}
-    </li>
+      {/* </li> */ }
+      </swiper-slide>
   );
 }
 export default MovieCard
