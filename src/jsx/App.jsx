@@ -5,6 +5,7 @@ register();
 
 // Components:
 import Nav from "../components/Nav";
+import MovieHeader from "../components/MovieHeader";
 import MovieList from "../components/MovieList";
 
 // const movie_discover_url =
@@ -73,21 +74,21 @@ function App() {
 
   return (
     <div className="bg-dark text-light">
-      <div className="container py-4  mx-auto ">
+      <div className="container py-4 px-0  w-100 mx-0 ">
         <Nav />
         <h1>
           <span className="text-danger">Movie</span>Browser
         </h1>
-        <button onClick={fetchMovies} className="btn btn-primary">
+        {/* <button onClick={fetchMovies} className="btn btn-primary">
           button
-        </button>
-        <section className="container-fluid">
-          {content}
-          {/* { !isLoading && popularMovies.length > 0 && <MovieList movies={ popularMovies } /> }
-          { !isLoading && popularMovies.length === 0 && !error &&  }
-          { !isLoading && error && <p>{ error }</p> }
-          {isLoading && <p>Loading...</p>} */}
+        </button> */}
+        <section className="carousel slide carousel-fade" data-bs-ride="carousel">
+          <MovieHeader movies={popularMovies} />
         </section>
+
+        {/* <section className="container-fluid">
+          {content}
+        </section> */}
       </div>
     </div>
   );
