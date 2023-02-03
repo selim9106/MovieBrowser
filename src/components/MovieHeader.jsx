@@ -2,10 +2,10 @@ import MovieHeaderCard from "./MovieHeaderCard"
 
 const MovieHeader = ({movies}) => {
   return (
-    <ul
+    <swiper-container
+      slides-per-view="1"
       id="movieHeaderCarousel"
-      className="carousel-inner"
-      data-bs-ride="carousel">
+      className="">
       {movies.map((movie) => (
         <MovieHeaderCard
           key={movie.id}
@@ -16,7 +16,7 @@ const MovieHeader = ({movies}) => {
           description={movie.overview}
         />
       ))}
-    </ul>
+    </swiper-container>
   );
 }
 export default MovieHeader

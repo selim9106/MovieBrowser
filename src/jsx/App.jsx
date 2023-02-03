@@ -73,16 +73,16 @@ function App() {
 
 
   return (
-    <div className="bg-dark text-light">
-      <div className="container py-4 px-0  w-100 mx-0 ">
-        <Nav />
-        <h1>
-          <span className="text-danger">Movie</span>Browser
+    <div className="bg-black text-light w-100">
+      <div className="container py-2 px-0 w-100 mx-0">
+        <h1 className="p-4">
+          <span className="text-danger">ILL</span>LEGAL
         </h1>
+        {/* <Nav /> */}
         {/* <button onClick={fetchMovies} className="btn btn-primary">
           button
         </button> */}
-        <section className="carousel slide carousel-fade" data-bs-ride="carousel">
+        <section className="h-75">
           <MovieHeader movies={popularMovies} />
         </section>
 
