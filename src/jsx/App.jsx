@@ -71,11 +71,10 @@ function App() {
   (popularMovies.length > 0) && (content = <MovieList movies={ popularMovies } />);
   isLoading && (content = <p>Loading...</p>);
 
-
   return (
     <div className="bg-black text-light w-100">
       <div className="container-fluid py-2 px-0 w-100 mx-0">
-        <h1 className="p-4">
+        <h1 className="p-4 ps-5">
           <span className="text-danger">ILL</span>LEGAL
         </h1>
         {/* <Nav /> */}
