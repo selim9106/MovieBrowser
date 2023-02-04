@@ -1,4 +1,6 @@
-function AddMovie({onAddMovie}) {
+import { useRef } from "react";
+
+const AddMovie = ({ onAddMovie }) => {
   const titleRef = useRef("");
   const openingTextRef = useRef("");
   const releaseDateRef = useRef("");
@@ -31,7 +33,7 @@ function AddMovie({onAddMovie}) {
         <label htmlFor="date">Release Date</label>
         <input type="text" id="date" ref={releaseDateRef} />
       </div>
-      <button>Add Movie</button>
+      <button type="submit">Add Movie</button>
     </form>
   );
 }
